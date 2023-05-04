@@ -1,60 +1,8 @@
 {
-  "name": "pm-frontend",
-  "version": "0.1.0",
-  "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.10.0",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "linter": "eslint src/*.js --color",
-    "test": "mocha tests/*.spec.js --color",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/chai": "^4.3.4",
-    "@types/mocha": "^10.0.1",
-    "chai": "^4.3.7",
-    "eslint": "^8.37.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-react": "^7.32.2",
-    "mocha": "^10.2.0"
-  },
-  "description": "Full-stack training",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Nitzantomer1998/PM-Frontend.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Nitzantomer1998/PM-Frontend/issues"
+    "body-parser": "^1.20.2",
+    "dompurify": "^3.0.2",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
   }
 }
