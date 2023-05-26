@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" /> <!-- Including an external CSS file -->
   </head>
 
   <body>
-    <form action="/login" method="post">
+    <form action="/login" method="post"> <!-- Creating a form that will submit data to the '/login' route using the HTTP POST method -->
       <div class="container">
         <label><b>Username</b></label>
         <input
@@ -13,7 +13,7 @@
           placeholder="Enter Username"
           name="username"
           required
-        />
+        /> <!-- Input field for entering the username -->
 
         <label><b>Password</b></label>
         <input
@@ -21,21 +21,24 @@
           placeholder="Enter Password"
           name="password"
           required
-        />
+        /> <!-- Input field for entering the password -->
 
         <label><b>Message</b></label>
-        <input type="text" placeholder="Enter Message" name="message" />
+        <input type="text" placeholder="Enter Message" name="message" /> <!-- Input field for entering a message -->
 
-        <button type="submit">Login</button>
+        <button type="submit">Login</button> <!-- Submit button for the form -->
+
       </div>
 
       <script>
         if (document.location.hash === '#unauthorized') {
+          // Checking if the URL has a hash value of '#unauthorized'
           document.write(
             '<div class="unauthorized">Invalid Username or Password</div>'
-          );
+          ); // Displaying an error message for invalid username or password
         } else if (document.location.hash === '#error') {
-          document.write('<div class="error">An error has occured</div>');
+          // Checking if the URL has a hash value of '#error'
+          document.write('<div class="error">An error has occurred</div>'); // Displaying an error message
         }
       </script>
     </form>
